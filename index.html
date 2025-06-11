@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zolentrax - Logística Inteligente</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background-color: #f0f6ff;
+      color: #222;
+    }
+    aside {
+      background-color: #001f3f;
+      color: white;
+      width: 250px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: fixed;
+      height: 100vh;
+    }
+    aside h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      color: #00bfff;
+    }
+    aside nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+      display: block;
+    }
+    main {
+      margin-left: 250px;
+      padding: 40px;
+      flex: 1;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #004080;
+    }
+    .card p {
+      padding: 0 15px 20px;
+      font-size: 0.95rem;
+    }
+    .tracker {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      text-align: center;
+      max-width: 600px;
+      margin: auto;
+    }
+    .tracker input {
+      padding: 10px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .tracker button {
+      padding: 10px 20px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<aside>
+  <h1>Zolentrax</h1>
+  <nav>
+    <a href="#rastreo">📦 Rastreo</a>
+    <a href="#servicios">🚛 Servicios</a>
+    <a href="#contacto">📞 Contacto</a>
+  </nav>
+</aside>
+
+<main>
+  <section class="section" id="rastreo">
+    <h2>📦 Rastreo Inteligente</h2>
+    <div class="tracker">
+      <p>Ingresa el número de guía y consulta el estado actual de tu envío.</p>
+      <input type="text" placeholder="Ej: ZT123456789" />
+      <br />
+      <button>Rastrear ahora</button>
+    </div>
+  </section>
+
+  <section class="section" id="servicios">
+    <h2>🚛 Servicios Especiales</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.UT49ST7ogrstdbCXcmen_AHaGS?w=706&h=600&rs=1&pid=ImgDetMain" alt="envíos internacionales">
+        <h3>Red de Cobertura Total</h3>
+        <p>Entregas en zonas urbanas y rurales, con seguridad y seguimiento constante.</p>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.6oVVPixU26OO6uSVrrihBAHaE5?rs=1&pid=ImgDetMain" alt="centros logísticos">
+        <h3>Infraestructura Moderna</h3>
+        <p>Contamos con centros logísticos automatizados para una operación eficiente.</p>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.tN1pAD4k3nJiKMzJY9vSzgAAAA?w=413&h=275&rs=1&pid=ImgDetMain" alt="rastreo">
+        <h3>Visibilidad Total</h3>
+        <p>Controla tu paquete en todo momento desde nuestra app o sitio web.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>📞 Contáctanos</h2>
+    <p><strong>Email:</strong> soporte@zolentrax.com</p>
+    <p><strong>Teléfono:</strong> +57 318 000 0000</p>
+    <p><strong>Horario:</strong> Lunes a Sábado, 7:00 a.m. - 7:00 p.m.</p>
+  </section>
+
+  <footer>
+    © 2025 Zolentrax. Tecnología en movimiento.
+  </footer>
+</main>
+
+</body>
+</html>
